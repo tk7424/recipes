@@ -1,0 +1,20 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to "RECIPES", root_path, id: "logo" %>
+      <nav>
+        <ul class="nav navbar-nav navbar-right">
+          <% if user_signed_in? %>
+            <li><%= link_to "マイページ", user_path(current_user) %></li>
+            <li><%= link_to "レシピ一覧", recipes_path %></li>
+            <li><%= link_to "投稿者一覧", users_path %></li>
+            <li><%= link_to "新規投稿", new_recipe_path %></li>
+            <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+          <% else %>
+            <li><%= link_to "ホーム", root_path %></li>
+            <li><%= link_to "レシピ一覧", recipes_path %></li>
+            <li><%= link_to "ログイン", new_user_session_path %></li>
+          <% end %>
+        </ul>
+      </nav>
+  </div>
+</header>

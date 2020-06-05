@@ -1,0 +1,117 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "bulma";
+
+$gray-medium-light: #eaeaea;
+
+// universal
+body {
+  padding-top: 0px;
+}
+
+.main-container {
+  text-align: center;
+}
+
+img {
+  height: 380px;
+}
+
+.alert {
+  display: none;
+}
+
+.notice {
+  text-align: center;
+}
+
+// font
+h1, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 4em;
+  font-family: Times New Roman;
+}
+
+h2 {
+  font-size: 2em;
+  font-family: Times New Roman;
+}
+
+.label {
+  color: black;
+}
+
+// header
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  font-family: Times New Roman;
+  color: black;
+  padding-top: 9px;
+  :hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.navbar > .container{
+  min-height: 60px;
+}
+
+// footer
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $gray-medium-light;
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-right: 15px;
+    }
+  }
+} 
+
+.footer {
+  color: black;
+  padding: 1.2px 1.5px;
+  background-color: white;
+}
+
+.image img {
+    display: initial;
+    height: initial;
+    width: initial;
+    height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.image.is-square img, .image.is-square .has-ratio, .image.is-1by1 img, .image.is-1by1 .has-ratio, .image.is-5by4 img, .image.is-5by4 .has-ratio, .image.is-4by3 img, .image.is-4by3 .has-ratio, .image.is-3by2 img, .image.is-3by2 .has-ratio, .image.is-5by3 img, .image.is-5by3 .has-ratio, .image.is-16by9 img, .image.is-16by9 .has-ratio, .image.is-2by1 img, .image.is-2by1 .has-ratio, .image.is-3by1 img, .image.is-3by1 .has-ratio, .image.is-4by5 img, .image.is-4by5 .has-ratio, .image.is-3by4 img, .image.is-3by4 .has-ratio, .image.is-2by3 img, .image.is-2by3 .has-ratio, .image.is-3by5 img, .image.is-3by5 .has-ratio, .image.is-9by16 img, .image.is-9by16 .has-ratio, .image.is-1by2 img, .image.is-1by2 .has-ratio, .image.is-1by3 img, .image.is-1by3 .has-ratio {
+    height: 80%;
+    width: 100%;
+    border-radius: initial;
+}
+
+// recipe
+.recipe_title > a {
+  color: black;
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
+.user_name > a {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.users_image > .attachment.user.profile_image.profile_image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}

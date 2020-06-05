@@ -1,6 +1,15 @@
 source 'https://rubygems.org'
 
 gem 'rails',        '5.1.6'
+gem 'devise'
+gem 'carrierwave'
+gem 'mini_magick'
+gem "refile", require: "refile/rails", github: 'manfe/refile'
+gem "refile-mini_magick"
+gem 'devise-i18n'
+gem 'devise-i18n-views'
+gem 'bootstrap-sass', '3.3.7'
+gem "bulma-rails"
 gem 'puma',         '3.9.1'
 gem 'sass-rails',   '5.0.6'
 gem 'uglifier',     '3.2.0'
