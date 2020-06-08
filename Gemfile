@@ -8,6 +8,7 @@ gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
 gem 'devise-i18n'
 gem 'devise-i18n-views'
+gem 'rails-i18n'
 gem 'bootstrap-sass', '3.3.7'
 gem "bulma-rails"
 gem 'puma',         '3.9.1'
