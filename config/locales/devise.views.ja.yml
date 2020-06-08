@@ -2,8 +2,40 @@ ja:
   activerecord:
     errors:
       models:
+        recipe:
+          attributes:
+            title:
+              taken: "は既に使用されています。"
+              blank: "が入力されていません。"
+              too_short: "は%{count}文字以上に設定して下さい。"
+              too_long: "は%{count}文字以下に設定して下さい。"
+              invalid: "は有効でありません。"
+            quantity:
+              taken: "は既に使用されています。"
+              blank: "が入力されていません。"
+              too_short: "は%{count}文字以上に設定して下さい。"
+              too_long: "は%{count}文字以下に設定して下さい。"
+              invalid: "は有効でありません。"
+            body:
+              taken: "は既に使用されています。"
+              blank: "が入力されていません。"
+              too_short: "は%{count}文字以上に設定して下さい。"
+              too_long: "は%{count}文字以下に設定して下さい。"
+              invalid: "は有効でありません。"
+            image:
+              taken: "は既に使用されています。"
+              blank: "が選択されていません。"
+              too_short: "は%{count}文字以上に設定して下さい。"
+              too_long: "は%{count}文字以下に設定して下さい。"
+              invalid: "は有効でありません。"
         user:
           attributes:
+            username:
+              taken: "は既に使用されています。"
+              blank: "が入力されていません。"
+              too_short: "は%{count}文字以上に設定して下さい。"
+              too_long: "は%{count}文字以下に設定して下さい。"
+              invalid: "は有効でありません。"
             email:
               taken: "は既に使用されています。"
               blank: "が入力されていません。"
@@ -20,11 +52,16 @@ ja:
     attributes:
       user:
         current_password: "現在のパスワード"
-        username: 名前
+        username: "名前"
         email: "メールアドレス"
         password: "パスワード"
         password_confirmation: "確認用パスワード"
         remember_me: "次回から自動的にログイン"
+      recipe:
+        title: "タイトル"
+        quantity: "材料"
+        body: "作り方"
+        image: "写真"
     models:
       user: "ユーザ"
   devise:

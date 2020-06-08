@@ -6,7 +6,7 @@
   
   <div class="field">
     <%= f.label :username %><br />
-    <%= f.text_field :username, autofocus: true, autocomplete: "email" %>
+    <%= f.text_field :username, autofocus: true, autocomplete: "username" %>
   </div>
 
   <div class="field">
@@ -32,5 +32,5 @@
     <%= f.submit "新規登録" %>
   </div>
 <% end %>
-
+<br>
 <%= render "devise/shared/links" %>
