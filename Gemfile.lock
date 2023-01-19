@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/manfe/refile.git
+  remote: https://github.com/manfe/refile.git
   revision: 46b4178654e60bb5846b1423acf6d0740cdecc25
   specs:
     refile (0.6.2)
@@ -77,7 +77,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.1.6)
+    concurrent-ruby (1.1.10)
     crass (1.0.6)
     devise (4.7.1)
       bcrypt (~> 3.0)
@@ -95,8 +95,8 @@ GEM
     execjs (2.7.0)
     ffi (1.12.2)
     formatador (0.2.5)
-    globalid (0.4.2)
-      activesupport (>= 4.2.0)
+    globalid (1.0.1)
+      activesupport (>= 5.0)
     guard (2.16.2)
       formatador (>= 0.2.4)
       listen (>= 2.7, < 4.0)
@@ -111,9 +111,9 @@ GEM
       guard-compat (~> 1.2)
       minitest (>= 3.0)
     http-accept (1.7.0)
-    http-cookie (1.0.3)
+    http-cookie (1.0.5)
       domain_name (~> 0.5)
-    i18n (1.8.2)
+    i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     image_processing (1.11.0)
       mini_magick (>= 4.9.5, < 5)
@@ -136,10 +136,12 @@ GEM
     mail (2.7.1)
       mini_mime (>= 0.1.1)
     method_source (1.0.0)
-    mime-types (3.3.1)
+    mime-types (3.4.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2020.0512)
-    mimemagic (0.3.5)
+    mime-types-data (3.2022.0105)
+    mimemagic (0.4.3)
+      nokogiri (~> 1)
+      rake
     mini_magick (4.10.1)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
@@ -150,7 +152,7 @@ GEM
       minitest (>= 5.0)
       ruby-progressbar
     multi_json (1.14.1)
-    mustermann (1.1.1)
+    mustermann (1.1.2)
       ruby2_keywords (~> 0.0.1)
     nenv (0.3.0)
     netrc (0.11.0)
@@ -237,7 +239,7 @@ GEM
     ruby-progressbar (1.10.1)
     ruby-vips (2.0.17)
       ffi (~> 1.9)
-    ruby2_keywords (0.0.2)
+    ruby2_keywords (0.0.5)
     ruby_dep (1.5.0)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
@@ -279,13 +281,13 @@ GEM
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
     turbolinks-source (5.2.0)
-    tzinfo (1.2.7)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.7)
+    unf_ext (0.0.8.2)
     warden (1.2.8)
       rack (>= 2.0.6)
     web-console (3.5.1)
